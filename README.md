@@ -7,7 +7,7 @@ Debian doesn't publish an official RSS feed for releases (unlike Arch Linux). Th
 ## Feed URL
 
 ```
-https://USER.github.io/debian-releases-rss/feed.xml
+https://bl4ckspell7.github.io/debian-releases-rss/feed.xml
 ```
 
 Includes every `.torrent` from:
