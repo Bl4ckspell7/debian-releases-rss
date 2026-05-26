@@ -1,0 +1,25 @@
+[project]
+name = "debian-releases-rss"
+version = "0.1.0"
+description = "RSS feed generator for Debian ISO torrent releases"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.13.0",
+    "feedgen>=1.0.0",
+    "requests>=2.33.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-m 'not integration'"
+markers = ["integration: live HTTP requests to cdimage.debian.org"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
