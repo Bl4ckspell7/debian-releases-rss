@@ -1,9 +1,33 @@
 {
+  "debian-13.5.0-amd64-DVD-1.iso.torrent": {
+    "first_seen": "2026-05-26T14:24:46.951856Z",
+    "last_modified": "2026-05-16T12:12:24Z",
+    "size": 304826,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/"
+  },
   "debian-13.5.0-amd64-netinst.iso.torrent": {
     "first_seen": "2026-05-26T11:13:23.338079Z",
     "last_modified": "2026-05-16T12:12:17Z",
     "size": 60868,
     "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/"
+  },
+  "debian-13.5.0-arm64-DVD-1.iso.torrent": {
+    "first_seen": "2026-05-26T14:24:46.951856Z",
+    "last_modified": "2026-05-16T12:14:04Z",
+    "size": 305446,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/arm64/bt-dvd/"
+  },
+  "debian-13.5.0-arm64-netinst.iso.torrent": {
+    "first_seen": "2026-05-26T14:24:46.951856Z",
+    "last_modified": "2026-05-16T12:14:00Z",
+    "size": 56588,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/arm64/bt-cd/"
+  },
+  "debian-13.5.0-riscv64-netinst.iso.torrent": {
+    "first_seen": "2026-05-26T14:24:46.951856Z",
+    "last_modified": "2026-05-16T14:27:23Z",
+    "size": 47318,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/riscv64/bt-cd/"
   },
   "debian-edu-13.5.0-amd64-netinst.iso.torrent": {
     "first_seen": "2026-05-26T11:13:23.338079Z",
