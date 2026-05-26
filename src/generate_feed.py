@@ -18,12 +18,32 @@ from feedgen.feed import FeedGenerator
 SOURCES: list[dict[str, str]] = [
     {
         "url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/",
-        "label": "netinst",
+        "label": "amd64-netinst",
+        "pattern": r".+\.torrent$",
+    },
+    {
+        "url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/",
+        "label": "amd64-dvd",
         "pattern": r".+\.torrent$",
     },
     {
         "url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/",
-        "label": "live",
+        "label": "amd64-live",
+        "pattern": r".+\.torrent$",
+    },
+    {
+        "url": "https://cdimage.debian.org/debian-cd/current/arm64/bt-cd/",
+        "label": "arm64-netinst",
+        "pattern": r".+\.torrent$",
+    },
+    {
+        "url": "https://cdimage.debian.org/debian-cd/current/arm64/bt-dvd/",
+        "label": "arm64-dvd",
+        "pattern": r".+\.torrent$",
+    },
+    {
+        "url": "https://cdimage.debian.org/debian-cd/current/riscv64/bt-cd/",
+        "label": "riscv64-netinst",
         "pattern": r".+\.torrent$",
     },
 ]
