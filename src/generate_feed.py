@@ -74,7 +74,9 @@ def list_torrents(source: dict[str, str], session: requests.Session) -> list[str
     regex = re.compile(source["pattern"])
     names: list[str] = []
     for a in soup.find_all("a"):
-        href = a.get("href", "")
+        href = a.get("href")
+        if not isinstance(href, str):
+            continue
         if "/" in href or href.startswith("?"):
             continue
         if regex.match(href):
