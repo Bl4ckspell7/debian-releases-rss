@@ -41,6 +41,18 @@ uv run ruff check
 uv run ruff format --check
 ```
 
+## Updating dependencies
+
+To refresh all runtime and development dependencies to the newest compatible versions in `pyproject.toml`:
+
+```bash
+uv remove beautifulsoup4 feedgen requests
+uv remove --group dev pytest ruff
+
+uv add beautifulsoup4 feedgen requests
+uv add --dev pytest ruff
+```
+
 ## One-time GitHub setup
 
 Settings → Pages → Source = **GitHub Actions**.
