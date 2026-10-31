@@ -1,12 +1,10 @@
 """Scrape cdimage.debian.org for .torrent files and emit an RSS feed."""
 
-from __future__ import annotations
-
 import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urljoin
@@ -114,7 +112,7 @@ def fetch_metadata(url: str, session: requests.Session) -> tuple[str | None, int
     last_modified: str | None = None
     if "Last-Modified" in resp.headers:
         try:
-            dt = parsedate_to_datetime(resp.headers["Last-Modified"]).astimezone(timezone.utc)
+            dt = parsedate_to_datetime(resp.headers["Last-Modified"]).astimezone(UTC)
             last_modified = dt.isoformat().replace("+00:00", "Z")
         except TypeError, ValueError:
             last_modified = None
@@ -134,7 +132,7 @@ def update_state(
     now: datetime,
 ) -> dict[str, dict]:
     """Walk sources, add new torrents to state, refresh metadata on known ones."""
-    now_iso = now.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+    now_iso = now.astimezone(UTC).isoformat().replace("+00:00", "Z")
     for source in sources:
         try:
             names = list_torrents(source, session)
@@ -198,7 +196,7 @@ def main() -> int:
     state = load_state(STATE_PATH)
     print(f"Loaded {len(state)} entries from state")
 
-    state = update_state(state, SOURCES, session, datetime.now(timezone.utc))
+    state = update_state(state, SOURCES, session, datetime.now(UTC))
     print(f"After scrape: {len(state)} entries")
 
     state = cap_history(state, MAX_ENTRIES)

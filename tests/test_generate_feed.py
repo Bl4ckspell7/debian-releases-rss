@@ -1,15 +1,12 @@
 """Unit + integration tests for generate_feed."""
 
-from __future__ import annotations
-
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
 import requests
 
 import generate_feed as gf
-
 
 # --- pure-function unit tests ---
 
@@ -58,8 +55,8 @@ def test_first_seen_preserved_across_updates(monkeypatch: pytest.MonkeyPatch) ->
     monkeypatch.setattr(gf, "fetch_metadata", fake_meta)
 
     sources = [{"url": "https://example.com/", "label": "x", "pattern": r".+"}]
-    t1 = datetime(2026, 5, 1, tzinfo=timezone.utc)
-    t2 = datetime(2026, 6, 1, tzinfo=timezone.utc)
+    t1 = datetime(2026, 5, 1, tzinfo=UTC)
+    t2 = datetime(2026, 6, 1, tzinfo=UTC)
 
     state = gf.update_state({}, sources, session, t1)
     first_seen_before = state["debian-13.0.0-amd64-netinst.iso.torrent"]["first_seen"]
