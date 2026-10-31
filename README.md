@@ -43,7 +43,9 @@ uv run ruff format --check
 
 ## Updating dependencies
 
-To refresh all runtime and development dependencies to the newest compatible versions in `pyproject.toml`:
+[Renovate](https://docs.renovatebot.com) runs daily via the `renovate` workflow and opens PRs for GitHub Actions, Python dependencies (`pyproject.toml` + `uv.lock`) and the Python version. Config: [renovate.json](renovate.json).
+
+To refresh all runtime and development dependencies manually to the newest compatible versions in `pyproject.toml`:
 
 ```bash
 uv remove beautifulsoup4 feedgen requests
@@ -58,6 +60,8 @@ uv add --dev pytest ruff
 Settings → Pages → Source = **GitHub Actions**.
 
 Then trigger `Update Feed` workflow manually once to seed the feed.
+
+For Renovate, add a fine-grained PAT with access to this repo (Contents, Commit statuses, Issues, Pull requests, Workflows: read & write; Dependabot alerts: read-only) as the repository secret `RENOVATE_TOKEN`.
 
 ## How state works
 
