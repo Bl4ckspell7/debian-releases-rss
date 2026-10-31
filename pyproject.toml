@@ -22,4 +22,3 @@ markers = ["integration: live HTTP requests to cdimage.debian.org"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py315"
