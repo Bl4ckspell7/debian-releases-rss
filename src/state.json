@@ -89,6 +89,36 @@
     "size": 47398,
     "source_url": "https://cdimage.debian.org/debian-cd/current/riscv64/bt-cd/"
   },
+  "debian-13.8.0-amd64-DVD-1.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:45:22Z",
+    "size": 302946,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/"
+  },
+  "debian-13.8.0-amd64-netinst.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:45:13Z",
+    "size": 61108,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/"
+  },
+  "debian-13.8.0-arm64-DVD-1.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:44:18Z",
+    "size": 305146,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/arm64/bt-dvd/"
+  },
+  "debian-13.8.0-arm64-netinst.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:44:16Z",
+    "size": 56748,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/arm64/bt-cd/"
+  },
+  "debian-13.8.0-riscv64-netinst.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T13:36:04Z",
+    "size": 47158,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/riscv64/bt-cd/"
+  },
   "debian-edu-13.5.0-amd64-netinst.iso.torrent": {
     "first_seen": "2026-05-26T11:13:23.338079Z",
     "last_modified": "2026-05-16T12:12:18Z",
@@ -105,6 +135,12 @@
     "first_seen": "2026-09-13T09:41:49.768818Z",
     "last_modified": "2026-09-12T11:32:12Z",
     "size": 61594,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/"
+  },
+  "debian-edu-13.8.0-amd64-netinst.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:45:15Z",
+    "size": 61834,
     "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/"
   },
   "debian-live-13.5.0-amd64-cinnamon.iso.torrent": {
@@ -269,6 +305,60 @@
     "size": 292476,
     "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
   },
+  "debian-live-13.8.0-amd64-cinnamon.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:49:02Z",
+    "size": 316068,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-debian-junior.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:48:49Z",
+    "size": 342243,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-gnome.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:48:55Z",
+    "size": 292059,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-kde.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:49:08Z",
+    "size": 321473,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-lxde.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:48:53Z",
+    "size": 292056,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-lxqt.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:48:56Z",
+    "size": 306796,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-mate.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:48:52Z",
+    "size": 304256,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-standard.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:48:48Z",
+    "size": 154948,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
+  "debian-live-13.8.0-amd64-xfce.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:48:51Z",
+    "size": 294036,
+    "source_url": "https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/"
+  },
   "debian-mac-13.5.0-amd64-netinst.iso.torrent": {
     "first_seen": "2026-05-26T11:13:23.338079Z",
     "last_modified": "2026-05-16T12:12:19Z",
@@ -285,6 +375,12 @@
     "first_seen": "2026-09-13T09:41:49.768818Z",
     "last_modified": "2026-09-12T11:32:14Z",
     "size": 61034,
+    "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/"
+  },
+  "debian-mac-13.8.0-amd64-netinst.iso.torrent": {
+    "first_seen": "2026-11-21T23:21:49.357117Z",
+    "last_modified": "2026-11-21T11:45:16Z",
+    "size": 61274,
     "source_url": "https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/"
   }
 }
